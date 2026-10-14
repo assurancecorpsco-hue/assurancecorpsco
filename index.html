@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UAE Corporate Tax Audit Readiness | Assurance Corps</title>
+
+  <meta name="description" content="Prepare your Dubai business for a UAE Corporate Tax review with a practical checklist covering financial records, tax reconciliations, supporting documents and FTA audit readiness.">
+
+  <style>
+    :root {
+      --navy: #142b49;
+      --navy-dark: #0d1d33;
+      --teal: #078b83;
+      --teal-light: #e8f7f5;
+      --text: #334155;
+      --muted: #64748b;
+      --border: #dfe7ef;
+      --surface: #f5f8fc;
+      --white: #ffffff;
+      --radius: 12px;
+      --shadow: 0 5px 22px rgba(20, 43, 73, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 30px;
+    }
+
+    body {
+      margin: 0;
+      background: #f5f7fa;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .corporate-tax-article {
+      width: min(100% - 40px, 1000px);
+      margin: 40px auto 80px;
+      padding: 44px 48px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      font-size: 16px;
+      line-height: 1.85;
+      overflow-wrap: anywhere;
+    }
+
+    .corporate-tax-article p {
+      margin: 0 0 22px;
+    }
+
+    .corporate-tax-article h1 {
+      margin: 0 0 28px;
+      padding-bottom: 24px;
+      border-bottom: 3px solid var(--teal);
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .corporate-tax-article h2 {
+      margin: 56px 0 22px;
+      padding: 0 0 13px 17px;
+      border-left: 5px solid var(--teal);
+      border-bottom: 1px solid var(--border);
+      color: var(--navy);
+      font-size: clamp(23px, 3vw, 30px);
+      line-height: 1.4;
+      scroll-margin-top: 24px;
+    }
+
+    .corporate-tax-article h3 {
+      margin: 36px 0 15px;
+      color: var(--navy);
+      font-size: clamp(19px, 2.5vw, 23px);
+      line-height: 1.45;
+    }
+
+    .corporate-tax-article h4 {
+      margin: 28px 0 14px;
+      color: var(--teal);
+      font-size: 19px;
+      line-height: 1.5;
+    }
+
+    .corporate-tax-article ul,
+    .corporate-tax-article ol {
+      margin: 18px 0 26px;
+      padding-left: 28px;
+    }
+
+    .corporate-tax-article li {
+      margin-bottom: 11px;
+      padding-left: 5px;
+    }
+
+    .corporate-tax-article li::marker {
+      color: var(--teal);
+    }
+
+    .corporate-tax-article a {
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .corporate-tax-article a:hover {
+      color: var(--navy);
+    }
+
+    /* Responsive tables */
+
+    .table-wrapper {
+      width: 100%;
+      margin: 28px 0 32px;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .corporate-tax-article table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .corporate-tax-article caption {
+      padding: 14px 16px;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 700;
+      text-align: left;
+      caption-side: top;
+    }
+
+    .corporate-tax-article thead th {
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .corporate-tax-article th,
+    .corporate-tax-article td {
+      padding: 15px 16px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .corporate-tax-article th:last-child,
+    .corporate-tax-article td:last-child {
+      border-right: 0;
+    }
+
+    .corporate-tax-article tbody th {
+      background: #f0f5fa;
+      color: var(--navy);
+    }
+
+    .corporate-tax-article tbody tr:nth-child(even) td {
+      background: #f7fafc;
+    }
+
+    .corporate-tax-article tbody tr:hover td {
+      background: var(--teal-light);
+    }
+
+    .corporate-tax-article tbody tr:last-child td,
+    .corporate-tax-article tbody tr:last-child th {
+      border-bottom: 0;
+    }
+
+    /* Checklist */
+
+    .readiness-checklist {
+      margin: 32px 0;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--teal);
+      border-radius: 16px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .checklist-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .checklist-header h3 {
+      margin: 0;
+      font-size: 21px;
+    }
+
+    #checklist-count {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--teal-light);
+      color: #076d66;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .readiness-progress {
+      width: 100%;
+      height: 8px;
+      margin-bottom: 24px;
+      overflow: hidden;
+      border-radius: 99px;
+      background: #e1eaf0;
+    }
+
+    .readiness-progress-fill {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--teal);
+      transition: width 0.25s ease;
+    }
+
+    .readiness-checklist label {
+      display: grid;
+      grid-template-columns: 21px minmax(0, 1fr);
+      column-gap: 13px;
+      row-gap: 5px;
+      align-items: start;
+      margin-bottom: 12px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--white);
+      cursor: pointer;
+    }
+
+    .readiness-checklist label:hover {
+      border-color: var(--teal);
+    }
+
+    .readiness-checklist label:has(input:checked) {
+      border-color: #80cfc5;
+      background: #f0fbf9;
+    }
+
+    .readiness-checklist input[type="checkbox"] {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      width: 19px;
+      height: 19px;
+      margin: 3px 0 0;
+      accent-color: var(--teal);
+      cursor: pointer;
+    }
+
+    .readiness-checklist label strong {
+      grid-column: 2;
+      color: var(--navy);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .readiness-checklist label span {
+      grid-column: 2;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .reset-button {
+      min-height: 44px;
+      margin-top: 12px;
+      padding: 11px 22px;
+      border: 1px solid var(--navy);
+      border-radius: 8px;
+      background: var(--navy);
+      color: var(--white);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .reset-button:hover {
+      border-color: var(--teal);
+      background: var(--teal);
+    }
+
+    .checklist-note {
+      margin: 20px 0 0 !important;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .corporate-tax-article :focus-visible {
+      outline: 3px solid #54c7bb;
+      outline-offset: 3px;
+    }
+
+    /* Tablet */
+
+    @media (max-width: 768px) {
+      .corporate-tax-article {
+        width: calc(100% - 28px);
+        margin: 20px auto 48px;
+        padding: 28px 24px;
+        font-size: 15px;
+      }
+
+      .corporate-tax-article h1 {
+        font-size: 31px;
+      }
+
+      .corporate-tax-article h2 {
+        margin-top: 42px;
+        font-size: 25px;
+      }
+
+      .corporate-tax-article h3 {
+        margin-top: 29px;
+        font-size: 20px;
+      }
+
+      .corporate-tax-article th,
+      .corporate-tax-article td {
+        min-width: 130px;
+        padding: 12px;
+      }
+
+      .readiness-checklist {
+        padding: 20px;
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 480px) {
+      .corporate-tax-article {
+        width: 100%;
+        margin: 0 auto 36px;
+        padding: 25px 17px;
+        border-radius: 0;
+        font-size: 15px;
+      }
+
+      .corporate-tax-article h1 {
+        font-size: 28px;
+      }
+
+      .corporate-tax-article h2 {
+        margin-top: 36px;
+        padding-left: 12px;
+        font-size: 22px;
+      }
+
+      .corporate-tax-article h3 {
+        font-size: 19px;
+      }
+
+      .corporate-tax-article p {
+        margin-bottom: 18px;
+      }
+
+      .corporate-tax-article ul,
+      .corporate-tax-article ol {
+        padding-left: 22px;
+      }
+
+      .corporate-tax-article table {
+        font-size: 13px;
+      }
+
+      .corporate-tax-article th,
+      .corporate-tax-article td {
+        min-width: 145px;
+        padding: 11px;
+      }
+
+      .readiness-checklist {
+        padding: 16px;
+      }
+
+      .readiness-checklist label {
+        padding: 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <article class="corporate-tax-article">
+
+    <!-- PASTE YOUR COMPLETE EXISTING ARTICLE HERE.
+         Keep your original H1, paragraphs, headings and tables. -->
+
+    <h1>UAE Corporate Tax Audit Readiness: Records, Reconciliations and FTA Review Checklist for Dubai Businesses</h1>
+
+    <p>Dubai businesses must prepare more than a Corporate Tax return for an FTA review. They must show where their reported figures came from. Each important amount should match accounting records and supporting documents.</p>
+
+    <p>UAE Corporate Tax law generally requires businesses to keep relevant records for seven years after the end of the relevant tax period, subject to applicable rules.</p>
+
+    <h2>Corporate Tax Audit Readiness Checklist for Dubai Businesses</h2>
+
+    <p>Use this checklist to review six important compliance areas. Assign an owner and keep evidence for every completed item.</p>
+
+    <section class="readiness-checklist" aria-labelledby="checklist-heading">
+
+      <div class="checklist-header">
+        <h3 id="checklist-heading">Audit Readiness Checklist</h3>
+        <span id="checklist-count" aria-live="polite">0 of 6 complete</span>
+      </div>
+
+      <div
+        class="readiness-progress"
+        role="progressbar"
+        aria-label="Audit readiness checklist completion"
+        aria-valuemin="0"
+        aria-valuemax="6"
+        aria-valuenow="0"
+      >
+        <div class="readiness-progress-fill"></div>
+      </div>
+
+      <label>
+        <input type="checkbox" class="readiness-item">
+        <strong>Registration and filing</strong>
+        <span>Verify Corporate Tax registration, tax periods, filed returns, payments and applicable elections.</span>
+      </label>
+
+      <label>
+        <input type="checkbox" class="readiness-item">
+        <strong>Financial records</strong>
+        <span>Confirm financial statements, trial balances, ledgers, bank reconciliations and transaction evidence.</span>
+      </label>
+
+      <label>
+        <input type="checkbox" class="readiness-item">
+        <strong>Tax reconciliations</strong>
+        <span>Trace accounting profit to taxable income and match computations with filed returns.</span>
+      </label>
+
+      <label>
+        <input type="checkbox" class="readiness-item">
+        <strong>Technical tax positions</strong>
+        <span>Review deductions, exemptions, reliefs, related party transactions and free zone conditions.</span>
+      </label>
+
+      <label>
+        <input type="checkbox" class="readiness-item">
+        <strong>Document retention</strong>
+        <span>Check retention periods, archive integrity, access permissions and document retrieval.</span>
+      </label>
+
+      <label>
+        <input type="checkbox" class="readiness-item">
+        <strong>Governance and response</strong>
+        <span>Assign owners, maintain an exception register and establish an FTA response procedure.</span>
+      </label>
+
+      <button type="button" class="reset-button" id="reset-checklist">
+        Reset checklist
+      </button>
+
+      <p class="checklist-note">
+        Completion supports an internal review. It does not guarantee compliance or an FTA audit outcome.
+      </p>
+
+    </section>
+
+    <h2>How to Complete a Corporate Tax Audit Readiness Review in 30 Days</h2>
+
+    <p>A structured review helps finance teams manage preparation without missing important records.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Phase</th>
+            <th>Main activities</th>
+            <th>Deliverable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Days 1 to 5</td>
+            <td>Confirm entity scope, filings, records and owners.</td>
+            <td>Evidence inventory</td>
+          </tr>
+          <tr>
+            <td>Days 6 to 12</td>
+            <td>Reconcile accounting records, statements and returns.</td>
+            <td>Reconciliation workpapers</td>
+          </tr>
+          <tr>
+            <td>Days 13 to 20</td>
+            <td>Review tax adjustments, reliefs and related party positions.</td>
+            <td>Risk and exception register</td>
+          </tr>
+          <tr>
+            <td>Days 21 to 26</td>
+            <td>Investigate errors and complete necessary corrections.</td>
+            <td>Remediation file</td>
+          </tr>
+          <tr>
+            <td>Days 27 to 30</td>
+            <td>Review evidence, obtain approvals and test retrieval.</td>
+            <td>Readiness report</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Request a Corporate Tax Audit Readiness Assessment in Dubai</h2>
+
+    <p>Assurance Corps provides accounting, auditing and tax advisory services for UAE businesses. Contact the team to discuss your audit readiness requirements and confirm the assessment scope and deliverables.</p>
+
+    <p>
+      Businesses seeking
+      <a href="https://assurancecorps.com/">audit and assurance services Dubai</a>
+      can also discuss financial statement requirements. A financial statement audit remains separate from an FTA Corporate Tax audit.
+    </p>
+
+    <!--
+      IMPORTANT:
+      Replace the sample paragraphs and headings above with your
+      complete original article. Keep the checklist section where
+      you want the interactive checklist to appear.
+
+      For every existing HTML table, wrap it in:
+      <div class="table-wrapper">
+        ...your existing table...
+      </div>
+    -->
+
+  </article>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const checklist = document.querySelector('.readiness-checklist');
+
+      if (!checklist) return;
+
+      const items = checklist.querySelectorAll('.readiness-item');
+      const count = checklist.querySelector('#checklist-count');
+      const reset = checklist.querySelector('#reset-checklist');
+      const progress = checklist.querySelector('.readiness-progress');
+      const progressFill = checklist.querySelector('.readiness-progress-fill');
+
+      function updateCount() {
+        const completed = Array.from(items)
+          .filter(item => item.checked).length;
+
+        const total = items.length;
+        const percentage = total > 0 ? (completed / total) * 100 : 0;
+
+        count.textContent = completed + ' of ' + total + ' complete';
+
+        progressFill.style.width = percentage + '%';
+
+        progress.setAttribute('aria-valuemax', total);
+        progress.setAttribute('aria-valuenow', completed);
+      }
+
+      items.forEach(function (item) {
+        item.addEventListener('change', updateCount);
+      });
+
+      reset.addEventListener('click', function () {
+        items.forEach(function (item) {
+          item.checked = false;
+        });
+
+        updateCount();
+      });
+
+      updateCount();
+    });
+  </script>
+
+</body>
+</html>
